@@ -1,0 +1,15 @@
+{
+  "name": "horizon-docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Horizon-Protocol/Horizon-Protocol-Doc",
+  "author": "lxz <bithub@github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.22"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
