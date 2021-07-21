@@ -21,10 +21,6 @@ jobs:
         if: hashFiles('CNAME') != ''
         run: echo "::set-output name=content::$(cat CNAME)"
         id: cname
-        uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-          fetch-depth: 0
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
