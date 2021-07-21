@@ -43,7 +43,7 @@ The system provides rewards for staking. When you stake HZN, your stake is then 
 
 **Minting zUSD:**
 
-As an investor, you can mint zUSD, which means you are incurring a debt to the network. The debt must be adequately collateralised, and your collateralization ratio (C-Ratio) always maintained. Further details on maintaining your C-Ratio is provided below.
+As an investor, you can mint zUSD, which means you are incurring a debt to the network. The debt must be adequately collateralized, and your collateralization ratio (C-Ratio) always maintained. Further details on maintaining your C-Ratio is provided below.
 
 With zUSD, you can begin trading for other synthetic assets (zAssets). Horizon Exchange will offer cross-chain crypto derivatives, as well as traditional financial markets, such as equities, commodities, and market indices.
 
@@ -64,16 +64,14 @@ Anyone that holds HZN tokens can stake on the network as there is no minimum. Ho
 ### Basic Steps
 
 1. Horizon Genesis operates on Binance Smart Chain, so have your HZN token in a compatible wallet. Horizon Genesis supports the following:
-
 	- MetaMask
 	- TrustWallet
 	- Binance Chain Wallet extension (FireFox, Chrome, Edge)
-	- Hardware wallets (Ledger, Trezor) are not supported natively by Horizon, however, are available 		through MetaMask and Binance Chain extension.
+	- Hardware wallets (Ledger, Trezor) are not supported natively by Horizon Protocol, however, are available 		through MetaMask and the Binance Chain Wallet extension.
 
 2. Visit the [Horizon Genesis Website](https://genesis.horizonprotocol.com)
 
 3. Select Mint
-
 	- Choose your minting strategy (select one of the preset strategies, or select the zUSD amount you want to mint).
 	- Max. Mint will populate the max amount of zUSD you can mint, given your HZN holdings.
 
@@ -84,7 +82,6 @@ The minimum collaterization ratio (C-Ratio), USD value of HZN staked divided by 
 If the HZN token price increases, the system will automatically unstake the additional HZN value to maintain your original C-Ratio and you can mint additional zUSD.  
 
 If the HZN token price decreases, you must ensure you are maintaining a proper C-Ratio. There are a few things to always keep in mind:
-
 - Min. C-Ratio for claiming rewards. If your C-Ratio falls below 800%, you cannot claim rewards – however, they still accrue on your account. You must bring your C-Ratio back over 800% to claim.
 - Liquidation risk – if your C-Ratio falls below 200% and remains below 500% for three days you face liquidation from other traders who are willing to fix your C-Ratio at a discount.
 
@@ -92,17 +89,15 @@ If the HZN token price decreases, you must ensure you are maintaining a proper C
 
 ### Maintaining your C-Ratio
 
-Minting Example: You’ve staked $800 worth of HZN, and the system has a target C-Ratio of 800%. The max amount you can mint is $100 zUSD. _The C-Ratio can change as per system governance._
+Minting Example: You’ve staked $800 worth of HZN, and the system has a target C-Ratio of 800%. The max amount you can mint is $100 zUSD. The C-Ratio can change as per system governance.
 
-What affects your C-Ratio?
+**What affects your C-Ratio?**
 
 HZN Market Price:
-
 - If the market price of HZN increases, your C-Ratio will stay the same but the HZN you need to collateralize your position will reduce. You have the option to re-stake the extra HZN.
 - If the market price of HZN decreases, your C-Ratio will decrease.
 
 There are two ways to maintain your C-ratio:
-
 - Burn some zUSD. This pays back some or all of your debt and will increase your C-Ratio.
 - Stake more HZN. This provides more collateral and will increase your C-Ratio.
 
@@ -134,9 +129,10 @@ Scenario:
 1. John and Adam are still responsible for 50% of the total debt each. This means John and Adam both owe $125k. When John's zBNB is taken into consideration, he has profited $25k. Even though Adam still has the same zUSD position size of $100k - the debt he owes increased by 25% resulting in a $25k loss.
 
 **How are HZN stakers rewards calculated?**
+
 There are two components to rewards: zUSD and HZN.
 
-- There will be a transaction fee on Horizon Exchange of 0.3% that is distributed proportionally to all stakers i.e. the more zUSD you have minted, the higher proportion of fees you will receive.
+- There will be a transaction fee (in zUSD) on Horizon Exchange of 0.3% that is distributed proportionally to all stakers i.e. the more zUSD you have minted, the higher proportion of fees you will receive.
 - HZN rewards are determined by the [Horizon Protocol inflation policy](https://horizonprotocol.medium.com/horizon-supply-and-inflation-policy-f0aaa8cc4a3a). This starts with Horizon Genesis and will begin with 100% of weekly inflation allocated to staking rewards.
 
 You need to be above the target C-Ratio in order to be eligible and claim your rewards. There is no negative consequence to being below the target C-Ratio - you just won’t be able to claim your rewards.
@@ -149,7 +145,7 @@ There is a liquidation risk to consider: your HZN stake is at risk if your C-Rat
 
 ### Conservative Strategy
 
-A conservative strategy aims to stake HZN and mint zUSD at slightly above the target C-Ratio in order to remain comfortably within the range of being eligible for rewards. It also mimics the global zAsset portfolio (inapplicable with Horizon Genesis) in order to reduce the risk of their global debt increasing due to other synthetic assets going up. If C-Ratio increases too much - you can mint more zUSD to return to a manageable level.
+A conservative strategy aims to stake HZN and mint zUSD at slightly above the target C-Ratio in order to remain comfortably within the range of being able to claim rewards. It also mimics the global zAsset portfolio (inapplicable with Horizon Genesis) in order to reduce the risk of their global debt increasing due to other synthetic assets going up. If your C-Ratio increases too much - you can mint more zUSD to return to a manageable level.
 
 ### Neutral Strategy
 
