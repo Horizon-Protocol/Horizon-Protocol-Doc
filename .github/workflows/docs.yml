@@ -12,6 +12,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Swith gh-pages Branch
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+      - name: Get Current CNAME
+        if: hashFiles('CNAME') != ''
+        run: echo "::set-output name=content::$(cat CNAME)"
+        id: cname
+        uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+          fetch-depth: 0
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
@@ -37,6 +50,13 @@ jobs:
 
       - name: Build VuePress site
         run: yarn docs:build
+
+      - name: Create CNAME file
+        if: steps.cname.outputs.content
+        uses: finnp/create-file-action@master
+        env:
+          FILE_NAME: "docs/.vuepress/dist/CNAME"
+          FILE_DATA: "${{ steps.cname.outputs.content }}"
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
