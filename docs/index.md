@@ -29,7 +29,8 @@ Decentralized Exchanges (DEX)
 
 Centralized Exchanges (CEX)
 
-[MXC Exchange](https://www.mxc.com/trade/easy#HZN_USDT)
+[MXC Spot Exchange](https://www.mexc.com/exchange/HZN_USDT)
+[MXC Margin/Leverage Exchange (5x)](https://www.mexc.com/margin/HZN_USDT)
 
 ## Staking Overview
 
