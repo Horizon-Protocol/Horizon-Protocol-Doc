@@ -1,6 +1,6 @@
 module.exports = {
-  title: "Horizon Genesis",
-  description: "Horizon Genesis",
+  title: "Horizon Protocol",
+  description: "Documentation for Horizon Protocol",
   head: [["link", { rel: "icon", href: "/images/favicon.ico" }]],
 
   themeConfig: {
