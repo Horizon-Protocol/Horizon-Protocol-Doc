@@ -43,12 +43,16 @@ HZN is the token for the Horizon Protocol network that supports and underlies th
 
 You can buy HZN via the following exchanges:
 
-**Decentralized Exchanges (DEX)**  
+**Decentralized Exchanges (DEX)**
+
 [PancakeSwap](https://exchange.pancakeswap.finance/#/swap)
 
-**Centralized Exchanges (CEX)**  
-[MXC Spot Exchange](https://www.mexc.com/exchange/HZN_USDT)  
+**Centralized Exchanges (CEX)**
+
+[MXC Spot Exchange](https://www.mexc.com/exchange/HZN_USDT)
+
 [MXC Margin/Leverage Exchange (5x)](https://www.mexc.com/margin/HZN_USDT)
+
 [Hoo Spot Exchange](https://hoo.com/innovation/hzn-usdt)
 
 ### Synthetic Assets
@@ -307,12 +311,29 @@ Consider the following conditions:
 
 1. John has 100 HZN staked and a C-Ratio of 200%, which means he has 50 zUSD of debt.
 2. John fails to restore his C-Ratio back to 800% and after 3 days his account becomes available to be liquidated.
-3. To calculate how much zUSD will restore John's C-Ratio, this formula can be used: Z = (t _ D - V) / (t - (1 + P) - Z = zUSD debt required to restore John's C-Ratio - t = target C-Ratio (i.e. 8) - D = debt balance (i.e. 50) - V = value of staked HZN (i.e. 100) - P = liquidation penalty (i.e. 0.1)
-   (8 _ 50 - 100) / (8 - (1 + 0.1)) = 43.478260869565217 zUSD.
-4. Adam can now burn 43.478260869565217 zUSD to restore John's C-Ratio to 800%. The amount of HZN he receives is based on this formula:
-   R = (Z _ (1 + P) - R = HZN liquidation reward - Z = zUSD debt required to restore John's C-Ratio (i.e. 43.478260869565217) - P = liquidation penalty (i.e. 0.1)
-   (43.478260869565217 _ (1 + 0.1)) = 47.826086956521739 HZN
-5. This results in 47.826086956521739 of John's HZN going to Adam, leaving John with 52.173913043478261 HZN staked. John's debt is also reduced by 43.478260869565217 zUSD, leaving him with 6.521739130434783 zUSD in debt and a C-Ratio of 800%.
+3. To calculate how much zUSD will restore John's C-Ratio, this formula can be used: `Z = (t * D - V) / (t - (1 + P)`
+
+   ```
+   Z = zUSD debt required to restore John's C-Ratio
+   t = target C-Ratio (i.e. 8)
+   D = debt balance (i.e. 50)
+   V = value of staked HZN (i.e. 100)
+   P = liquidation penalty (i.e. 0.1)
+
+   (8 \* 50 - 100) / (8 - (1 + 0.1)) = 43.478260869565217 zUSD.
+   ```
+
+4. Adam can now burn `43.478260869565217` zUSD to restore John's C-Ratio to 800%. The amount of HZN he receives is based on this formula: `R = (Z * (1 + P)`
+
+   ```
+   R = HZN liquidation reward
+   Z = zUSD debt required to restore John's C-Ratio (i.e. 43.478260869565217)
+   P = liquidation penalty (i.e. 0.1)
+
+   (43.478260869565217 * (1 + 0.1)) = 47.826086956521739 HZN
+   ```
+
+5. This results in `47.826086956521739` of John's HZN going to Adam, leaving John with `52.173913043478261` HZN staked. John's debt is also reduced by `43.478260869565217` zUSD, leaving him with `6.521739130434783` zUSD in debt and a C-Ratio of 800%.
 
 ### Strategies
 
