@@ -320,7 +320,7 @@ Consider the following conditions:
    V = value of staked HZN (i.e. 100)
    P = liquidation penalty (i.e. 0.1)
 
-   (8 \* 50 - 100) / (8 - (1 + 0.1)) = 43.478260869565217 zUSD.
+   (8 * 50 - 100) / (8 - (1 + 0.1)) = 43.478260869565217 zUSD.
    ```
 
 4. Adam can now burn `43.478260869565217` zUSD to restore John's C-Ratio to 800%. The amount of HZN he receives is based on this formula: `R = (Z * (1 + P)`
