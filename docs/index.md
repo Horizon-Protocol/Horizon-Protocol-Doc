@@ -258,7 +258,7 @@ In addition to HZN staking rewards, Horizon Genesis offers incentives for liquid
 
 **Duration**: July 30th, 2021 - Ongoing
 
-**Pool**: [PancakeSwap HZN-BNB LP](https://pancakeswap.finance/add/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/0xF0186490B18CB74619816CfC7FeB51cdbe4ae7b9)
+**Pool**: [PancakeSwap zUSD-BUSD LP](https://pancakeswap.finance/add/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56/0xF0186490B18CB74619816CfC7FeB51cdbe4ae7b9)
 
 **Smart Contract**: `0x5646aA2F9408C7c2eE1dC7db813C8B687A959a85`
 
