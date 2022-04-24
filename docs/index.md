@@ -1,4 +1,4 @@
-#
+# !Please note that this doc has been deprecated. To see the latest version, please go to the [Horizon Academy](https://horizonprotocol.com/).
 
 ## Project Overview
 
